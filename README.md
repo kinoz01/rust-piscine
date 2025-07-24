@@ -1,53 +1,50 @@
 # Excali
-## Quest-01
+### Quest-01
 ```link
-https://excalidraw.com/#json=4jjMnkhXxawSpvUevI1GZ,fJcwBR72N3j9hQ3JpP2KJA
+https://excalidraw.com/#json=32qCRocQ2SM5BfKRHDKtP,NaUiwkoBTi1sq9TaUwNZRg
 ```
 
-# piscine-rust
-This is originally a dump of the /app folder of the [test-rust docker image from 01-edu](https://github.com/01-edu/rust-tests/pkgs/container/test-rust).
-
-It's the pedagogical and technical backbone of this 01-style piscine, which, unlike 42, is moulinette-only.  
-Its general idea is simple :
-- Start the first quest from the curriculum below
-- Do the first exercise
-- Test it with the included automated test
-- If good, move on to the next one
-- ...
-- Congratulations, you are now a rust developer.
-
-Though in the real program:
-- each Day... uuh I mean, Quest becomes available the day after the other, 
-- there is a 3 minutes cooldown between each moulinette test
-- you're supposed to do the 2 rushes... uhh I mean, raids in groups of 3 and be audited manually by staff
-- the practical project `chaikin` is (the only project) to be reviewed by peers.
-
-# Instructions
-
-Make sure the Rust toolchain is installed on your computer.  
-It is best to install it the official way, by going [here](https://www.rust-lang.org/learn/get-started), and not through your package manager.
-
-Make sure your whole piscine repo is the `solutions` folder alongside `tests`, at the root of this repository.  
-This should look like this:  
-`piscine-rust/ <- you are here!`  
-`------------/tests`  
-`------------/solutions/fibonacci2/<contents of the cargo module>`
-
-You can launch the automated testing of a completed exercise at the root of this repository with the command `./test.sh <exercise_name>`.  
-You can also directly run `cargo test --manifest-path tests/<exercise_name>_test/Cargo.toml`.
-
-Feel free to fork this repository, remove `solutions/*` from `.gitignore` and get to work directly in it.  
-Have fun!
-
-# Notes
-
-The original test mechanism was the following:
-- The student repo was cloned under `/jail/student` by the 01 runner program
-- The container is run, `$EXERCISE` and such are filled and `/jail` is set as current directory
-- `/app/entrypoint.sh` (reworked into `test.sh`) is called upon running the container
-- `/app/tests` is copied in `/jail` so that it is alongside the student repo
-- `/jail/student` is renamed into `/jail/solutions` because runner clones the repo as "`student`" yet all rust tests are written to look for a "`solutions`" package :facepalm:  
-	NB: I have yet no idea if the `/app/tests_utility` is necessary since it is never copied in `/jail/student` during testing
+# Checkpoint Exercice:
+- [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
+- [nextprime](https://github.com/01-edu/public/tree/master/subjects/nextprime)
+- [reverse_it](https://github.com/01-edu/public/tree/master/subjects/reverse_it)
+- [smallest](https://github.com/01-edu/public/tree/master/subjects/smallest)
+- [partial_sums](https://github.com/01-edu/public/tree/master/subjects/partial_sums)
+- [modify_letter](https://github.com/01-edu/public/tree/master/subjects/modify_letter)
+- [counting_words](https://github.com/01-edu/public/tree/master/subjects/counting_words)
+- [inv_pyramid](https://github.com/01-edu/public/tree/master/subjects/inv_pyramid)
+- [count_factorial_steps](https://github.com/01-edu/public/tree/master/subjects/count_factorial_steps)
+- [lucas_number](https://github.com/01-edu/public/tree/master/subjects/lucas_number)
+- [own_and_return](https://github.com/01-edu/public/tree/master/subjects/own_and_return)
+- [matrix_determinant](https://github.com/01-edu/public/tree/master/subjects/matrix_determinant)
+- [check_user_name](https://github.com/01-edu/public/tree/master/subjects/check_user_name)
+- [insertion_sort](https://github.com/01-edu/public/tree/master/subjects/insertion_sort)
+- [rpn](https://github.com/01-edu/public/tree/master/subjects/rpn)
+- [dress_code](https://github.com/01-edu/public/tree/master/subjects/dress_code)
+- [get_document_id](https://github.com/01-edu/public/tree/master/subjects/get_document_id)
+- [rot21](https://github.com/01-edu/public/tree/master/subjects/rot21)
+- [flat_tree](https://github.com/01-edu/public/tree/master/subjects/flat_tree)
+- [order_books](https://github.com/01-edu/public/tree/master/subjects/order_books)
+- [prime_checker](https://github.com/01-edu/public/tree/master/subjects/prime_checker)
+- [profanity_filter](https://github.com/01-edu/public/tree/master/subjects/profanity_filter)
+- [display_table](https://github.com/01-edu/public/tree/master/subjects/display_table)
+- [scytale_decoder](https://github.com/01-edu/public/tree/master/subjects/scytale_decoder)
+- [office_worker](https://github.com/01-edu/public/tree/master/subjects/office_worker)
+- [matrix_display](https://github.com/01-edu/public/tree/master/subjects/matrix_display)
+- [car_rental](https://github.com/01-edu/public/tree/master/subjects/car_rental)
+- [negative_spelling](https://github.com/01-edu/public/tree/master/subjects/negative_spelling)
+- [queens](https://github.com/01-edu/public/tree/master/subjects/queens)
+- [organize_garage](https://github.com/01-edu/public/tree/master/subjects/organize_garage)
+- [blood_types_s](https://github.com/01-edu/public/tree/master/subjects/blood_types_s)
+- [lunch_queue](https://github.com/01-edu/public/tree/master/subjects/lunch_queue)
+- [moving_targets](https://github.com/01-edu/public/tree/master/subjects/moving_targets)
+- [filter_table](https://github.com/01-edu/public/tree/master/subjects/filter_table)
+- [drop_the_blog](https://github.com/01-edu/public/tree/master/subjects/drop_the_blog)
+- [brackets_matching](https://github.com/01-edu/public/tree/master/subjects/brackets_matching)
+- [brain_fuck](https://github.com/01-edu/public/tree/master/subjects/brain_fuck)
+- [min_and_max](https://github.com/01-edu/public/tree/master/subjects/min_and_max)
+- [matrix_multiplication](https://github.com/01-edu/public/tree/master/subjects/matrix_multiplication)
+- [format_me](https://github.com/01-edu/public/tree/master/subjects/format_me)
 
 
 # Curriculum
@@ -238,3 +235,5 @@ Exercices:
 - pig_latin | https://github.com/01-edu/public/tree/master/subjects/pig_latin
 - spelling | https://github.com/01-edu/public/tree/master/subjects/spelling
 - rgb_match | https://github.com/01-edu/public/tree/master/subjects/rgb_match
+
+

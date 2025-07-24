@@ -1,6 +1,8 @@
-EXERCISES := $(shell find tests -name '*_test' -exec basename {} _test \;)
-SOLVED := $(patsubst solutions/%,%,$(wildcard solutions/*))
-TESTABLE := $(filter $(EXERCISES),$(SOLVED))
+# only dirs directly under tests/, ignore target/
+EXERCISES := $(patsubst %_test,%,$(notdir $(wildcard tests/*_test)))
+# solved ones
+SOLVED    := $(notdir $(wildcard solutions/*))
+TESTABLE  := $(filter $(EXERCISES),$(SOLVED))
 
 help:
 	@echo "Usage:"
