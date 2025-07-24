@@ -2,7 +2,7 @@
 ### Quest-01
 https://excalidraw.com/#json=32qCRocQ2SM5BfKRHDKtP,NaUiwkoBTi1sq9TaUwNZRg
 
-# Checkpoint Exercice:
+# Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
 - [nextprime](https://github.com/01-edu/public/tree/master/subjects/nextprime)
 - [reverse_it](https://github.com/01-edu/public/tree/master/subjects/reverse_it)
