@@ -1,8 +1,6 @@
 # Excali
 ### Quest-01
-```link
 https://excalidraw.com/#json=32qCRocQ2SM5BfKRHDKtP,NaUiwkoBTi1sq9TaUwNZRg
-```
 
 # Checkpoint Exercice:
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
