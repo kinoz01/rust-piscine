@@ -1,0 +1,1 @@
+/home/kino/Videos/piscine-rust/solutions/temperature_conv/target/debug/temperature_conv: /home/kino/Videos/piscine-rust/solutions/temperature_conv/src/lib.rs /home/kino/Videos/piscine-rust/solutions/temperature_conv/src/main.rs
