@@ -1,3 +1,2 @@
 Tip:
-    cargo new --lib fibonacci2
-
+    make dir-fibonacci2
