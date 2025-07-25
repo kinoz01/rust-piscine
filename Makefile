@@ -6,10 +6,12 @@ TESTABLE  := $(filter $(EXERCISES),$(SOLVED))
 
 help:
 	@echo "Usage:"
-	@echo "  make <exercise>       - Run tests for the exercise"
-	@echo "  make test-all         - Run tests for all exercises in solutions/"
-	@echo "  make dir-<exercise>   - Create solutions/<exercise> dir with main.rs + lib.rs"
-	@echo "  make run-<exercise>   - Run the program on solutions/<exercise> dir"
+	@echo "  make <exercise>		- Run tests for the exercise"
+	@echo "  make test-all			- Run tests for all exercises in solutions/"
+	@echo "  make dir-<exercise>		- Create solutions/<exercise> dir with main.rs + lib.rs"
+	@echo "  make run-<exercise>		- Run the program on solutions/<exercise> dir"
+	@echo "  make ruspdate			- Install/upgrade rustup (no sudo); prints 'source \$\$HOME/.cargo/env'"
+	@echo "  make cargo-edition YEAR=2021	- Bulk-change edition in all Cargo.toml files under solutions/ (in case you face edition issues)"
 
 $(EXERCISES):
 	@cargo test --manifest-path tests/$@_test/Cargo.toml
@@ -69,3 +71,15 @@ test-all:
 	[ -n "$$passes" ] && echo "Passed:$$passes"; \
 	[ -n "$$fails"  ] && echo "Failed:$$fails"; \
 	[ -z "$$fails" ] || exit 1
+
+# Install/upgrade rustup & Rust toolchain without sudo, then remind to source env
+update-rust:
+	@command -v rustup >/dev/null 2>&1 || curl https://sh.rustup.rs -sSf | sh -s -- -y --profile minimal
+	@echo 'Run: source $$HOME/.cargo/env'
+
+# Usage: make cargo-edition YEAR=<year>   (default YEAR=2024)
+YEAR ?= 2024
+cargo-edition:
+	@find solutions -maxdepth 2 -name Cargo.toml -exec sed -i \
+	  -e '/^cargo-features *= *\["edition2024"\]/d' \
+	  -e 's/edition *= *"[0-9][0-9][0-9][0-9]"/edition = "$(YEAR)"/' {} +
