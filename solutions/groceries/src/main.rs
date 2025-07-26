@@ -10,5 +10,6 @@ fn main() {
     insert(&mut groceries, String::from("nuts"));
     println!("groceries = {:?}", &groceries);
     println!("groceries[1] = {:?}", at_index(&groceries, 1));
+    
 }
 
