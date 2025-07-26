@@ -13,7 +13,7 @@ pub fn str_function(a: String) -> (String, String) {
 pub fn vec_function(b: Vec<i32>) -> (Vec<i32>, Vec<f64>) {
     let res = b
         .iter()
-        .map(|&x| (x as f64).ln())
+        .map(|&x| (x.abs() as f64).ln())
         .collect::<Vec<_>>();
     (b, res)
 }
