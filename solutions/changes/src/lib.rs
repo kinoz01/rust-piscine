@@ -10,13 +10,11 @@ impl Light {
             alias: alias.to_string(),
             brightness: 0,
         }
-
     }
 }
 
 pub fn change_brightness(lights: &mut [Light], alias: &str, value: u8) {
     for room in lights {
-        println!("{:?}", room);
         if room.alias == alias {
             room.brightness = value
         }
