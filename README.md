@@ -3,7 +3,7 @@
 https://excalidraw.com/#json=irKt0_zaOhSXsVA6TpHT6,0ckePRNW-gHtBjGUR-Zk7g
 
 ### Quest-02
-https://excalidraw.com/#json=EwL3TFI_RaFJ0gI5FmtQH,jqkfctkd4G6mqdKwCp8UAg
+https://excalidraw.com/#json=BmK8FtnztgF41Lgv7W4Ku,5RzuTZYY6u_-COg_xGH9jw
 
 # Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
