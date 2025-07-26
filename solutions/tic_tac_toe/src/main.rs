@@ -16,10 +16,5 @@ fn main() {
 
     println!("{}", tic_tac_toe(diag));
     // player X won
-
-    let mut s1 = String::from("HELLO");
-    let s2 = String::new();
-
-    s1.push_str(s2.as_str());
 }
 
