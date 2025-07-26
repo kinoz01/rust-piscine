@@ -6,7 +6,7 @@ pub struct Light {
 
 impl Light {
     pub fn new(alias: &str) -> Self {
-        Self{
+        Self {
             alias: alias.to_string(),
             brightness: 0,
         }
@@ -19,4 +19,4 @@ pub fn change_brightness(lights: &mut [Light], alias: &str, value: u8) {
             room.brightness = value
         }
     }
-} 
+}

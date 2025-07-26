@@ -13,7 +13,7 @@ pub fn diagonals(player: char, table: [[char; 3]; 3]) -> bool {
 }
 
 pub fn horizontal(player: char, table: [[char; 3]; 3]) -> bool {
-    table.iter().any(|row| row.iter().all(|&cell| cell == player))
+    table.iter().any(|&row| row.iter().all(|&cell| cell == player))
 }
 
 pub fn vertical(player: char, table: [[char; 3]; 3]) -> bool {
