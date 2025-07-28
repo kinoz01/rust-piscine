@@ -9,7 +9,7 @@ https://excalidraw.com/#json=dfuzf_9DolgnDsM_WoP0Q,_4M94SoKtmhMltTwazM73Q
 https://excalidraw.com/#json=YFk040682NoZzCKyfgt9a,fOqPFUV71NaF84nR3i23Cg
 
 ### Checkpoint-01
-https://excalidraw.com/#json=0JPLbPUSmw9wv-cHriJRA,shf60p4PsBTnrNnxYYKQPw
+https://excalidraw.com/#json=ukxnxIudnfy7vFZWcTKKw,q3LhdpeBhk6hCpFLpQQBKg
 
 min-and-max, matrix-multiplication, reverse-it, smallest, modify-letter, counting-words, partial-sums, inv-pyramid, insertion-sort, rpn
 
