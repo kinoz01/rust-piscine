@@ -1,9 +1,17 @@
 # Excali
 ### Quest-01
-https://excalidraw.com/#json=irKt0_zaOhSXsVA6TpHT6,0ckePRNW-gHtBjGUR-Zk7g
+https://excalidraw.com/#json=xyo2PctFmRmr8J6chbf2a,WDSd5B7NVUWZmklg2-XenA
 
 ### Quest-02
-https://excalidraw.com/#json=8lgZYhcjNAaYleMffJZKj,F7pGOJ2cpSQVWfpIeMwlWg
+https://excalidraw.com/#json=dfuzf_9DolgnDsM_WoP0Q,_4M94SoKtmhMltTwazM73Q
+
+### Quest-03
+https://excalidraw.com/#json=YFk040682NoZzCKyfgt9a,fOqPFUV71NaF84nR3i23Cg
+
+### Checkpoint-01
+https://excalidraw.com/#json=0JPLbPUSmw9wv-cHriJRA,shf60p4PsBTnrNnxYYKQPw
+
+min-and-max, matrix-multiplication, reverse-it, smallest, modify-letter, counting-words, partial-sums, inv-pyramid, insertion-sort, rpn
 
 # Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)

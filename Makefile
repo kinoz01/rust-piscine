@@ -10,7 +10,7 @@ help:
 	@echo "  make test-all			- Run tests for all exercises in solutions/"
 	@echo "  make dir-<exercise>		- Create solutions/<exercise> dir with main.rs + lib.rs"
 	@echo "  make run-<exercise>		- Run the program on solutions/<exercise> dir"
-	@echo "  make ruspdate			- Install/upgrade rustup (no sudo); prints 'source \$\$HOME/.cargo/env'"
+	@echo "  make update-rust			- Install/upgrade rustup (no sudo); prints 'source HOME/.cargo/env'"
 	@echo "  make cargo-edition YEAR=2021	- Bulk-change edition in all Cargo.toml files under solutions/ (in case you face edition issues)"
 
 $(EXERCISES):

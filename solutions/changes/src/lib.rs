@@ -16,7 +16,7 @@ impl Light {
 pub fn change_brightness(lights: &mut [Light], alias: &str, value: u8) {
     for room in lights {
         if room.alias == alias {
-            room.brightness = value
+            room.brightness = value;
         }
     }
 }

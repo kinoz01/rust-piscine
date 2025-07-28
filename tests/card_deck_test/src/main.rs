@@ -6,9 +6,9 @@ fn main() {
         suit: Suit::random(),
     };
 
-    println!("Your card is {:?}", your_card);
+    println!("Your card is {:?}", &your_card);
 
-    if card_deck::winner_card(your_card) {
+    if card_deck::winner_card(&your_card) {
         println!("You are the winner!");
     }
 }
@@ -33,7 +33,7 @@ mod tests {
                     suit: Suit::translate(suit),
                 };
 
-                assert_eq!(card_deck::winner_card(card), card == winner);
+                assert_eq!(card_deck::winner_card(&card), card == winner);
             }
         }
     }
