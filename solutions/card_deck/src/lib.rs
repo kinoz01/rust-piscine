@@ -1,4 +1,4 @@
-use rand::random_range;
+use rand::Rng;
 
 #[derive(Debug, PartialEq, Eq)]
 pub enum Suit {
@@ -10,7 +10,7 @@ pub enum Suit {
 
 impl Suit {
     pub fn random() -> Self {
-        let r = random_range(1..5);
+        let r = rand::thread_rng().gen_range(1..5);
         Self::translate(r)
     }
 
@@ -35,7 +35,7 @@ pub enum Rank {
 
 impl Rank {
     pub fn random() -> Self {
-        let r = random_range(1..14);
+        let r = rand::thread_rng().gen_range(1..14);
         Self::translate(r)
     }
 
