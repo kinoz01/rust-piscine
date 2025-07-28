@@ -7,14 +7,14 @@ fn main() {
 pub fn rpn(input: &str) {
     let mut values: Vec<i64> = Vec::new();
     let op = input.split_whitespace();
-    let mut err = true;
+    let mut err = false;
 
     for v in op {
         if let Ok(x) = v.parse() {
             values.push(x);
         } else {
             if is_op(v) && values.len() < 2 {
-                err = false;
+                err = true;
                 break;
             }
             let (y, x) = (values.pop().unwrap(), values.pop().unwrap());
@@ -25,14 +25,14 @@ pub fn rpn(input: &str) {
                 "/" => values.push(x / y),
                 "%" => values.push(x % y),
                 _ => {
-                    err = false;
+                    err = true;
                     break;
                 }
             }
         }
     }
 
-    if values.len() == 1 && err {
+    if values.len() == 1 && !err {
         println!("{}", values[0]);
     } else {
         println!("Error");
