@@ -3,10 +3,10 @@
 https://excalidraw.com/#json=xyo2PctFmRmr8J6chbf2a,WDSd5B7NVUWZmklg2-XenA
 
 ### Quest-02
-https://excalidraw.com/#json=dfuzf_9DolgnDsM_WoP0Q,_4M94SoKtmhMltTwazM73Q
+https://excalidraw.com/#json=TXToT0vg7yAMlIxin87-4,NWgTbYaDulx6vL-ZCQn6dg
 
 ### Quest-03
-https://excalidraw.com/#json=PHaP9nhA5hmE7UQy2s3j3,GeDxs6MFiFGQKwSnQZ4mqg
+https://excalidraw.com/#json=CS0OXOo7GJNPlU0FW_Xt5,WGSAPfG2kUcBlJqueLOO5Q
 
 ### Checkpoint-01
 https://excalidraw.com/#json=tsCxKSYGdjO-F5mdOODaM,duVnZFeHt96P1FCXKfSAyQ

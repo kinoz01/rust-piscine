@@ -4,6 +4,12 @@ EXERCISES := $(patsubst %_test,%,$(notdir $(wildcard tests/*_test)))
 SOLVED    := $(notdir $(wildcard solutions/*))
 TESTABLE  := $(filter $(EXERCISES),$(SOLVED))
 
+# -------- colours --------
+GREEN := \033[0;32m
+RED   := \033[0;31m
+RESET := \033[0m
+# -------------------------
+
 help:
 	@echo "Usage:"
 	@echo "  make <exercise>		- Run tests for the exercise"
@@ -68,14 +74,14 @@ test-all:
 	done; \
 	echo ""; \
 	echo "===== Summary ====="; \
-	[ -n "$$passes" ] && echo "Passed:$$passes"; \
-	[ -n "$$fails"  ] && echo "Failed:$$fails"; \
+	[ -n "$$passes" ] && echo "$(GREEN)Passed$(RESET):$$passes"; \
+	[ -n "$$fails"  ] && echo "$(RED)Failed$(RESET):$$fails"; \
 	[ -z "$$fails" ] || exit 1
 
 # Install/upgrade rustup & Rust toolchain without sudo, then remind to source env
 update-rust:
 	@command -v rustup >/dev/null 2>&1 || curl https://sh.rustup.rs -sSf | sh -s -- -y --profile minimal
-	@echo 'Run: source $$HOME/.cargo/env'
+	@echo '$(GREEN)Run: source $$HOME/.cargo/env$(RESET)\n'
 
 # Usage: make cargo-edition YEAR=<year>   (default YEAR=2024)
 YEAR ?= 2024

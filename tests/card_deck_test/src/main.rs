@@ -17,7 +17,7 @@ fn main() {
 mod tests {
     use super::*;
 
-    // We cannot test the randomness as there's no 100% accurate consistent way to prove through a predicate that it yields a truly random number
+    // We cannot truly test the randomness as there's no 100% accurate consistent way to prove through a predicate that it yields a truly random number
 
     #[test]
     fn test_winner() {

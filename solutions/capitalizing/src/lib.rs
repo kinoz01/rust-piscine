@@ -17,10 +17,10 @@ pub fn change_case(input: &str) -> String {
     input
         .chars()
         .flat_map(|c| {
-            if c.is_uppercase() {
-                c.to_lowercase().collect::<Vec<char>>()
+            if c.is_lowercase() {
+                c.to_uppercase().collect::<Vec<_>>()
             } else {
-                c.to_uppercase().collect::<Vec<char>>()
+                c.to_lowercase().collect::<Vec<_>>()
             }
         })
         .collect()

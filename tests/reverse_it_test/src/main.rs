@@ -14,6 +14,4 @@ fn reverse_it_test() {
     assert_eq!("11", &reverse_it(1));
     assert_eq!("-84638474122147483648", &reverse_it(i32::MIN));
     assert_eq!("74638474122147483647", &reverse_it(i32::MAX));
-    assert_eq!("-84638474122147483648", &reverse_it(i32::MIN));
-    assert_eq!("74638474122147483647", &reverse_it(i32::MAX));
 }
