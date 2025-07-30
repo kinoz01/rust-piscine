@@ -81,7 +81,7 @@ test-all:
 # Install/upgrade rustup & Rust toolchain without sudo, then remind to source env
 update-rust:
 	@command -v rustup >/dev/null 2>&1 || curl https://sh.rustup.rs -sSf | sh -s -- -y --profile minimal
-	@echo '$(GREEN)Run: source $$HOME/.cargo/env$(RESET)\n'
+	@echo "$(GREEN)Run: source $$HOME/.cargo/env$(RESET)\n"
 
 # Usage: make cargo-edition YEAR=<year>   (default YEAR=2024)
 YEAR ?= 2024
