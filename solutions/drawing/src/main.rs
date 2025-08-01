@@ -25,7 +25,7 @@ fn main() {
         gs::Circle::random(image.width, image.height).draw(&mut image);
     }
 
-    raster::save(&image, "image.png").unwrap();
+    raster::save(&image, "./solutions/drawing/image.png").unwrap();
 }
 
 // We define diplayable Trait for image (self will be an instance of an Image -from raster crate-).
