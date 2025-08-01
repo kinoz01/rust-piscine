@@ -13,6 +13,12 @@ https://excalidraw.com/#json=tsCxKSYGdjO-F5mdOODaM,duVnZFeHt96P1FCXKfSAyQ
 
 min-and-max, matrix-multiplication, reverse-it, smallest, modify-letter, counting-words, partial-sums, inv-pyramid, insertion-sort, rpn
 
+### Raid-01
+https://excalidraw.com/#json=QddOST9TPrLvD-wtH86t-,F5Zm4oGW0kPfD74ZoRd6aA
+
+### Quest-04
+https://excalidraw.com/#json=GgSd0VDPKY4iTFUCNcGKi,QYkuAl-Fmnk7fOG0cHF6RA
+
 # Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
 - [nextprime](https://github.com/01-edu/public/tree/master/subjects/nextprime)

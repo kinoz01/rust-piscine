@@ -3,6 +3,7 @@ EXERCISES := $(patsubst %_test,%,$(notdir $(wildcard tests/*_test)))
 # solved ones
 SOLVED    := $(notdir $(wildcard solutions/*))
 TESTABLE  := $(filter $(EXERCISES),$(SOLVED))
+RUNABLE   := $(filter $(EXERCISES),$(SOLVED)) drawing
 
 # -------- colours --------
 GREEN := \033[0;32m
@@ -43,7 +44,7 @@ $(EXERCISES:%=dir-%):
 		echo "Created $$dir"; \
 	fi
 
-$(TESTABLE:%=run-%):
+$(RUNABLE:%=run-%):
 	@name=$(patsubst run-%,%,$@); \
 	echo "Running $$name …"; \
 	cargo run --manifest-path solutions/$$name/Cargo.toml
