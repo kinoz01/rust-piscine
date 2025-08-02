@@ -18,7 +18,7 @@ https://excalidraw.com/#json=QddOST9TPrLvD-wtH86t-,F5Zm4oGW0kPfD74ZoRd6aA
 https://www.youtube.com/watch?v=hpiILbMkF9w
 
 ### Quest-04
-https://excalidraw.com/#json=PpKdgouBsxSn0s8_K8Ubd,bPwN1gbvnSov8ahd-893Dw
+https://excalidraw.com/#json=f-2Nffae4tkyHPliVjnUH,_Hl1nEa3Ufj0D9xMckoOtg
 
 # Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
