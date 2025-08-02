@@ -15,9 +15,10 @@ min-and-max, matrix-multiplication, reverse-it, smallest, modify-letter, countin
 
 ### Raid-01
 https://excalidraw.com/#json=QddOST9TPrLvD-wtH86t-,F5Zm4oGW0kPfD74ZoRd6aA
+https://www.youtube.com/watch?v=hpiILbMkF9w
 
 ### Quest-04
-https://excalidraw.com/#json=HC1_4NIbzVnAVymrloKxR,GFLv9ogcJrhB8dv06Y3a-g
+https://excalidraw.com/#json=PpKdgouBsxSn0s8_K8Ubd,bPwN1gbvnSov8ahd-893Dw
 
 # Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
