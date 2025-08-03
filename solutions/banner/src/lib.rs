@@ -6,7 +6,7 @@ pub struct Flag<'a> {
     pub desc:       &'a str,
 }
 
-impl<'a>  Flag<'a> {
+impl<'a> Flag<'a> {
     pub fn opt_flag(name: &'a str, d: &'a str) -> Self {
         Self {
             short_hand: format!("-{}", name.chars().next().unwrap()),

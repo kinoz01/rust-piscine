@@ -18,7 +18,7 @@ pub struct TodoList {
 }
 
 impl TodoList {
-    pub fn get_todo(path: &str) -> Result<Self, Box<dyn Error>> {
+    pub fn get_todo(path: &str) -> Result<TodoList, Box<dyn Error>> {
         let data = fs::read_to_string(path)
             .map_err(|e| Box::new(ReadErr { child_err: Box::new(e) }) as Box<dyn Error>)?;
 
@@ -31,7 +31,7 @@ impl TodoList {
         }
 
         let tasks = tasks_json
-            .members()
+            .members() // return iterator on a json array
             .map(|t| Task {
                 id:          t["id"].as_u32().unwrap(),
                 description: t["description"].to_string(),
