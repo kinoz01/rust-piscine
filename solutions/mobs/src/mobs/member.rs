@@ -1,5 +1,3 @@
-//! Role & member types
-
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Role {
     Underboss,
@@ -26,7 +24,7 @@ pub struct Member {
 }
 
 impl Member {
-    /// Promote one step; panic if already Underboss.
+    // Promote one step; panic if already Underboss.
     pub fn get_promotion(&mut self) {
         self.role = match self.role {
             Role::Associate  => Role::Soldier,
