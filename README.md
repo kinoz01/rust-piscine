@@ -9,7 +9,7 @@ https://excalidraw.com/#json=TXToT0vg7yAMlIxin87-4,NWgTbYaDulx6vL-ZCQn6dg
 https://excalidraw.com/#json=CS0OXOo7GJNPlU0FW_Xt5,WGSAPfG2kUcBlJqueLOO5Q
 
 ### Checkpoint-01
-https://excalidraw.com/#json=tsCxKSYGdjO-F5mdOODaM,duVnZFeHt96P1FCXKfSAyQ
+https://excalidraw.com/#json=vHq72970ENlx06l-lDdGY,pc_3xAOcQV6yWV4vIHkITA
 
 min-and-max, matrix-multiplication, reverse-it, smallest, modify-letter, counting-words, partial-sums, inv-pyramid, insertion-sort, rpn
 
@@ -21,7 +21,14 @@ https://www.youtube.com/watch?v=hpiILbMkF9w
 https://excalidraw.com/#json=iREHGkA7Cum5XfEGqXXoG,N95QNKmjUwG6WX5-VvAy3g
 
 ### Quest-05
-https://excalidraw.com/#json=ZxgkeEqcjJTdx-k_AJlpa,mrFnYsvQyxNKo2NOeq3BAw
+https://excalidraw.com/#json=T6Yx_8OjtyOKVacswbmMq,KdSB5YNnt6zX4NACnqZHyQ
+
+### Quest-06
+
+### Checkpoint-02
+https://excalidraw.com/#json=mD5qX6EKxzYvzCZ0slB9W,z_5csSU1eExdBbTlF_BtTQ
+
+previousprime, nextprime, reverse-it, count-factorial-steps, lucas-number, own-and-return, matrix-determinant, check-user-name, get-document-id, dress-code, rot21, order-books, prime-checker, queens, scytale-decoder,
 
 # Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
