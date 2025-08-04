@@ -1,4 +1,3 @@
-
 pub fn score(s: &str) -> u64 {
     s.chars()
         .map(|c| match c.to_ascii_uppercase() {
