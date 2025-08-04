@@ -24,7 +24,7 @@ https://excalidraw.com/#json=iREHGkA7Cum5XfEGqXXoG,N95QNKmjUwG6WX5-VvAy3g
 https://excalidraw.com/#json=T6Yx_8OjtyOKVacswbmMq,KdSB5YNnt6zX4NACnqZHyQ
 
 ### Quest-06
-https://excalidraw.com/#json=T6Yx_8OjtyOKVacswbmMq,KdSB5YNnt6zX4NACnqZHyQ
+https://excalidraw.com/#json=e5Tg-ET4NgyUs9AKwF0S9,dSdsgRtYWCar6EaFi8eb9w
 
 ### Checkpoint-02
 https://excalidraw.com/#json=V1lbsa0ah8fzvfadvkVo8,4tTZQC7fsCi7ThZV6QYwAQ

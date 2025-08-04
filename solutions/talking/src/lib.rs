@@ -7,10 +7,9 @@ pub fn talking(text: &str) -> &'static str {
 
     let is_question = t.ends_with('?');
 
-    let letters = t.chars().filter(|c| c.is_alphabetic());
     let is_yelling = {
-        let mut iter = letters.peekable();
-        iter.peek().is_some() && iter.all(|c| c.is_uppercase())
+        let letters: Vec<_> = t.chars().filter(|c| c.is_alphabetic()).collect();
+        !letters.is_empty() && letters.iter().all(|c| c.is_uppercase())
     };
 
     match (is_yelling, is_question) {
