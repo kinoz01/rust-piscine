@@ -1,20 +1,20 @@
-pub enum AccessLevel  {
+pub enum AccessLevel {
     Guest, 
     Normal, 
-    Admin,
+    Admin
 }
 
 pub struct User {
     name: String,
-    level: AccessLevel,
+    lvl : AccessLevel,
 }
 
 impl User {
-    pub fn new(name: String, level: AccessLevel) -> Self {
-        Self {name, level }
+    pub fn new(name: String, lvl: AccessLevel) -> Self {
+        Self {name, lvl}
     }
     pub fn send_name(&self) -> Option<&str> {
-        match self.level {
+        match self.lvl {
             AccessLevel::Guest => None,
             _ => Some(&self.name)
         }
@@ -24,6 +24,6 @@ impl User {
 pub fn check_user_name(user: &User) -> (bool, &str) {
     match user.send_name() {
         None => (false, "ERROR: User is guest"),
-        Some(name) => (true, name), 
+        Some(name) => (true, name)
     }
 }

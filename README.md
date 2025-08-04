@@ -26,7 +26,7 @@ https://excalidraw.com/#json=T6Yx_8OjtyOKVacswbmMq,KdSB5YNnt6zX4NACnqZHyQ
 ### Quest-06
 
 ### Checkpoint-02
-https://excalidraw.com/#json=mD5qX6EKxzYvzCZ0slB9W,z_5csSU1eExdBbTlF_BtTQ
+https://excalidraw.com/#json=V1lbsa0ah8fzvfadvkVo8,4tTZQC7fsCi7ThZV6QYwAQ
 
 previousprime, nextprime, reverse-it, count-factorial-steps, lucas-number, own-and-return, matrix-determinant, check-user-name, get-document-id, dress-code, rot21, order-books, prime-checker, queens, scytale-decoder,
 

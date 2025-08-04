@@ -27,9 +27,9 @@ pub struct OfficeFour {
 
 impl OfficeOne {
     pub fn get_document_id(&self) -> Result<u32, ErrorOffice> {
-        let office2 = self.next_office?;     
+        let office2 = self.next_office?;
         let office3 = office2.next_office?;
         let office4 = office3.next_office?;
-        office4.document_id 
+        office4.document_id
     }
 }
