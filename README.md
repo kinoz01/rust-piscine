@@ -32,7 +32,7 @@ https://excalidraw.com/#json=V1lbsa0ah8fzvfadvkVo8,4tTZQC7fsCi7ThZV6QYwAQ
 previousprime, nextprime, reverse-it, count-factorial-steps, lucas-number, own-and-return, matrix-determinant, check-user-name, get-document-id, dress-code, rot21, order-books, prime-checker, queens, scytale-decoder,
 
 ### Raid-02
-https://excalidraw.com/#json=ceWcNMIxZbOcbF_RluVwS,U6QMUXRIJv-1hlppGu6e4w
+https://excalidraw.com/#json=aC3X7ePKVYCROkKBJ1ACh,v3qqH5xUCx_-NaGH9XoBAg
 
 ### Checkpoint-03
 https://excalidraw.com/#json=yk9Xl2AUpaQYp1AchWl7f,3zd51enHUKWnjja--cnZ-g
