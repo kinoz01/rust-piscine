@@ -34,6 +34,9 @@ previousprime, nextprime, reverse-it, count-factorial-steps, lucas-number, own-a
 ### Raid-02
 https://excalidraw.com/#json=aC3X7ePKVYCROkKBJ1ACh,v3qqH5xUCx_-NaGH9XoBAg
 
+### Quest-07
+https://excalidraw.com/#json=9trfsVRPKZ9KCA2koACZd,ouLWyzypqilTV5PC1hCriQ
+
 ### Checkpoint-03
 https://excalidraw.com/#json=yk9Xl2AUpaQYp1AchWl7f,3zd51enHUKWnjja--cnZ-g
 
