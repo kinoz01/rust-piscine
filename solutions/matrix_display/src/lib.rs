@@ -11,15 +11,17 @@ use std::fmt;
 
 impl fmt::Display for Matrix {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        let lines: Vec<String> = self.0.iter()
-            .map(|row| {
-                let body = row.iter()
-                    .map(|n| n.to_string())
-                    .collect::<Vec<_>>()
-                    .join(" ");
-                format!("({})", body)
-            })
-            .collect();
-        write!(f, "{}", lines.join("\n"))
+        for (ri, row) in self.0.iter().enumerate() {
+            write!(f, "(")?;
+            for (ci, n) in row.iter().enumerate() {
+                if ci > 0 {write!(f, " ")?;}
+                write!(f, "{}", n)?;
+            }
+            write!(f, ")")?;
+            if ri+1 < self.0.len() {
+                write!(f, "\n")?;
+            }
+        }
+        Ok(())
     }
 }

@@ -21,10 +21,13 @@ pub struct BloodType {
 impl BloodType {
     pub fn can_receive_from(&self, other: &Self) -> bool {
         // Rh: negative can't receive positive; others OK
-        let rh_ok = !(
-            matches!(self.rh_factor, RhFactor::Negative) &&
-            matches!(other.rh_factor, RhFactor::Positive)
-        );
+        let rh_ok = match &self.rh_factor {
+            RhFactor::Negative => match &other.rh_factor {
+                RhFactor::Positive => false,
+                _ => true
+            },
+            _ => true
+        };
 
         // ABO
         let abo_ok = match (&self.antigen, &other.antigen) {

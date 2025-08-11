@@ -15,21 +15,21 @@ pub enum ParkType {
 }
 
 impl fmt::Display for ParkType {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+   fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
             ParkType::Garden => write!(f, "garden"),
             ParkType::Forest => write!(f, "forest"),
-            ParkType::Playground => write!(f, "playground"),
+            ParkType::Playground => write!(f, "playground")
         }
-    }
+   }
 }
 
 impl fmt::Display for Park {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        let name = if self.name.is_empty() { "No name" } else { &self.name };
-        let address = if self.address.is_empty() { "No address" } else { &self.address };
-        let cap = if self.cap.is_empty() { "No cap" } else { &self.cap };
-        let state = if self.state.is_empty() { "No state" } else { &self.state };
+        let name = if self.name.is_empty() {"No name"} else {&self.name};
+        let address = if self.address.is_empty() {"No address"} else {&self.address};
+        let cap = if self.cap.is_empty() {"No cap"} else {&self.cap};
+        let state = if self.state.is_empty() {"No state"} else {&self.state};
 
         write!(f, "{} - {}, {}, {} - {}", self.park_type, name, address, cap, state)
     }
