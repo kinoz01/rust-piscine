@@ -14,11 +14,11 @@ pub enum WorkerRole {
 
 impl From<&str> for OfficeWorker {
     fn from(s: &str) -> Self {
-        let mut it = s.splitn(3, ',');
-        let name = it.next().unwrap().to_string();
-        let age = it.next().unwrap().parse::<u32>().unwrap();
-        let role = WorkerRole::from(it.next().unwrap());
-        Self { name, age, role }
+        let mut cc = s.splitn(3, ',');
+        let name = cc.next().unwrap().to_string();
+        let age = cc.next().unwrap().parse().unwrap();
+        let role = WorkerRole::from(cc.next().unwrap());
+        Self {name, age, role}
     }
 }
 
@@ -28,7 +28,7 @@ impl From<&str> for WorkerRole {
             "admin" => WorkerRole::Admin,
             "user" => WorkerRole::User,
             "guest" => WorkerRole::Guest,
-            _ => unreachable!(), // invalid inputs won't be tested
+            _ => unreachable!(),
         }
     }
 }

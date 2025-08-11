@@ -1,5 +1,5 @@
 pub enum AccessLevel {
-    Guest, 
+    Guest,
     Normal, 
     Admin
 }
@@ -10,13 +10,13 @@ pub struct User {
 }
 
 impl User {
-    pub fn new(name: String, lvl: AccessLevel) -> Self {
-        Self {name, lvl}
+    pub fn new(name: String, lvl: AccessLevel) -> User {
+        User{name, lvl}
     }
     pub fn send_name(&self) -> Option<&str> {
         match self.lvl {
             AccessLevel::Guest => None,
-            _ => Some(&self.name)
+            _ => Some(&self.name),
         }
     }
 }

@@ -5,25 +5,24 @@ fn main() {
 }
 
 pub fn rpn(input: &str) {
-    let mut values: Vec<i64> = Vec::new();
-    let op = input.split_whitespace();
+    let mut res: Vec<i64> = Vec::new();
     let mut err = false;
 
-    for v in op {
+    for v in input.split_whitespace() {
         if let Ok(x) = v.parse() {
-            values.push(x);
+            res.push(x);
         } else {
-            if is_op(v) && values.len() < 2 {
+            if (v == "+" || v == "-" || v == "*" || v == "/" || v == "%") && res.len() < 2 {
                 err = true;
                 break;
             }
-            let (y, x) = (values.pop().unwrap(), values.pop().unwrap());
+            let (y, x) = (res.pop().unwrap(), res.pop().unwrap());
             match v {
-                "+" => values.push(x + y),
-                "-" => values.push(x - y),
-                "*" => values.push(x * y),
-                "/" => values.push(x / y),
-                "%" => values.push(x % y),
+                "+" => res.push(x + y),
+                "-" => res.push(x - y),
+                "/" => res.push(x / y),
+                "*" => res.push(x * y),
+                "%" => res.push(x % y),
                 _ => {
                     err = true;
                     break;
@@ -31,14 +30,9 @@ pub fn rpn(input: &str) {
             }
         }
     }
-
-    if values.len() == 1 && !err {
-        println!("{}", values[0]);
+    if res.len() == 1 && !err {
+        println!("{}", res[0])
     } else {
-        println!("Error");
+        println!("Error")
     }
-}
-
-fn is_op(s: &str) -> bool {
-    s == "+" || s == "-" || s == "*" || s == "/" || s == "%"
 }

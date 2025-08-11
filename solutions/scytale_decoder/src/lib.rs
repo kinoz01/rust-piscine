@@ -3,12 +3,9 @@ pub fn scytale_decoder(s: String, letters_per_turn: u32) -> Option<String> {
     if s.is_empty() || k == 0 {
         return None;
     }
-
-    let mut rows = vec![String::new(); k];
-
-    for (i, ch) in s.chars().enumerate() {
-        rows[i % k].push(ch);
+    let mut res = vec![String::new(); k];
+    for (i, c) in s.chars().enumerate() {
+        res[i % k].push(c);
     }
-
-    Some(rows.concat())
+    Some(res.concat())
 }

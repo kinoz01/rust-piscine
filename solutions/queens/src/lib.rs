@@ -21,19 +21,17 @@ impl ChessPosition {
 
 impl Queen {
     pub fn new(position: ChessPosition) -> Self {
-        Self {position}
+        Self{position}
     }
 
     pub fn can_attack(&self, other: &Queen) -> bool {
         let dr = (self.position.rank - other.position.rank).abs();
         let df = (self.position.file - other.position.file).abs();
 
-        if dr == 0 && df == 0 {
-            return false;
-        } else if dr == 0 || df == 0 || dr == df {
-            return true;
+        if dr == 0 || df == 0 || df ==dr {
+            return true
         } else {
-            return false;
+            return false
         }
     }
 }
