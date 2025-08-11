@@ -35,7 +35,10 @@ previousprime, nextprime, reverse-it, count-factorial-steps, lucas-number, own-a
 https://excalidraw.com/#json=aC3X7ePKVYCROkKBJ1ACh,v3qqH5xUCx_-NaGH9XoBAg
 
 ### Quest-07
-https://excalidraw.com/#json=QISWcGw0FpgbKy111mfik,eR3C2c6ZFPY43zS68tY5Lg
+https://excalidraw.com/#json=kpj8Q-LwQH417F-qaiOyr,cRrsz_0OXBrWyF4g75nPHQ
+
+### Quest-08
+https://excalidraw.com/#json=ZGPY0fBcNSReO1e6b6NS6,BcGqRtzH3dtHfnt5QFHe5w
 
 ### Checkpoint-03
 https://excalidraw.com/#json=id6417ZTr6xKkuK0Wn1BY,bhpjXuUVgwJon2prMU46lQ
