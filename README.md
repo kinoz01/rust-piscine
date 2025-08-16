@@ -45,6 +45,9 @@ https://excalidraw.com/#json=id6417ZTr6xKkuK0Wn1BY,bhpjXuUVgwJon2prMU46lQ
 
 counting-words, partial-sums, inv-pyramid, previousprime, nextprime, reverse-it, check-user-name, get-document-id, dress-code, negative-spelling, rpn, queens, scytale-decoder, office-worker, matrix-display, organize-garage, moving-targets, format-me, blood-types-s, car-rental, drop-the-blog, lunch-queue,
 
+
+https://excalidraw.com/#json=hi6B-rMIBt-mUn9GOaMrs,HrX8Zd4UUaFFbqSBXO9R5Q
+
 # Checkpoint
 - [previousprime](https://github.com/01-edu/public/tree/master/subjects/previousprime)
 - [nextprime](https://github.com/01-edu/public/tree/master/subjects/nextprime)
